@@ -16,8 +16,6 @@
 
 ## ACID Properties
 
-> **Definitions:**
->
 > ***ACID properties:*** are a set of properties that guarantee reliable processing of transactions in a database management system (DBMS). ACID properties ensure that transactions are processed reliably and consistently in a DBMS.
 
 ***Transaction:*** is a logical unit of work that accesses and updates the content of a database. Read and write operations are used by transactions to access data.
