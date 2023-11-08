@@ -4,12 +4,14 @@
   - [Atomicity](#atomicity)
   - [Consistency](#consistency)
   - [Isolation](#isolation)
-  - [Durability](#durablity)
+  - [Durability](#durability)
 - [Relationship between Tables](#relationship-between-tables)
 - [Where Clause](#where-clause)
 - [Join Clause](#join-clause)
 
 ---
+
+
 
 ## SQL Commands
 
@@ -75,6 +77,47 @@ Suppose that there is a system failure in the railway management system resulted
 
 ## Relationship between Tables
 
+- one to one
+- one to many
+- many to many
+
+
+
+---
+
 ## Where Clause
 
+It is use to filter data.
+
+```mysql
+SELECT <columns> -- select columns you want to retrive data
+FROM <table_name> -- select table from you want to retrive data
+WHERE <condition> -- condition on what basis you want to filter data
+```
+
+example:
+
+```mysql
+employee_table (
+first_name,
+last_name,
+emp_no,
+email,
+office_code,
+report_to,
+job_title);
+
+SELECT *
+FORM employee_table
+
+-- Using == operator
+WHERE office_code = 2;
+
+-- Using BETWEEN operator
+WHERE office_code BETWEEN(1,3) -- it include both 1 and 3
+```
+
+
+
 ## Join Clause
+
