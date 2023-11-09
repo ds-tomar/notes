@@ -121,3 +121,17 @@ WHERE office_code BETWEEN(1,3) -- it include both 1 and 3
 
 ## Join Clause
 
+
+
+- Inner Join
+  - Returns only the rows that have matching values in both tables.
+  - Row from both tables that do not have a match are excluded from the result.
+- Left Join
+  - Returns all rows from the left table and the matching rows from the right table.
+  - If there are no matching rows in the right table, NULL values are included.
+- Right Join
+  - Returns all rows from right table and the matching rows from the left table.
+  - If there are no matching rows in the left table, NULL values are included.
+- Full Join
+  - Returns all rows when there is a match in either the left of right table
+  - If there is no match in one of the tables, NULL values are included in the result.
