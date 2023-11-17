@@ -44,4 +44,3 @@ You can use WebDriver to simulate user interactions like clicking buttons, filli
 - Elements by **Class Name**
 
 - Elements by **CSS Selector**
--
